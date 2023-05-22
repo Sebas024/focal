@@ -12,32 +12,37 @@
  * availableTime is a Number representing the time you have for lunch,
  * in minutes.
  */
-
-function whatToDoForLunch(hungry, availableTime) {
-  console.log("I don't know what to do!", hungry);
-  console.log("availableTime is", availableTime)
-}
-
-
-/*
- * This is some test runner code that's simply calling our whatToDoForLunch function
- * defined above to verify we're making the right decisions. Do not modify it!
- */
-
-console.log("I'm hungry and I have 20 minutes for lunch.");
-whatToDoForLunch(true, 20);
-console.log("---");
-
-console.log("I'm hungry and I have 50 minutes for lunch.");
-whatToDoForLunch(true, 50);
-console.log("---");
-
-console.log("I'm not hungry and I have 30 minutes for lunch.");
-whatToDoForLunch(false, 30);
-console.log("---");
-
-console.log("I'm hungry and I have 15 minutes for lunch.");
-whatToDoForLunch(true, 15);
+  
+//   console.log("I'm hungry and I have 50 minutes for lunch.");
+//   whatToDoForLunch(true, 50);
+//   console.log("---");
+  
+//   console.log("I'm not hungry and I have 30 minutes for lunch.");
+//   whatToDoForLunch(false, 30);
+//   console.log("---");
+  
+//   console.log("I'm hungry and I have 15 minutes for lunch.");
+//   whatToDoForLunch(true, 15);
 
 
 
+
+let whatToDoForLunch = function(hungry, availableTime) {
+  if (hungry = true && availableTime < 20) {
+    console.log("pick up a snack or grab something we have ready at home");
+  }
+  else if (hungry = true && availableTime >= 20 && availableTime <= 30) {
+    console.log("to take a break and cook a tasty meal");
+  }
+  else if (hungry = true && availableTime > 30) {
+    console.log("we're learning to code and that we should reconsider how much time we actually have to spare.");
+  }
+  else {
+    console.log("wait until we're hungry");
+  }
+};
+  
+  
+  
+whatToDoForLunch(false, 15);
+  
