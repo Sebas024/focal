@@ -1,7 +1,6 @@
-let sum = 0;
-let x = 0;
-for (let j = 2; j < process.argv.length; j++) {
-  x = Number(process.argv[j]);
-  sum = sum + x;
-}
-console.log(sum);
+let args = process.argv;
+// console.log(args);
+// console.log(args.slice(2));
+
+args = args.slice(2);
+console.log(Number(args[0]) + Number(args[1]));
