@@ -7,3 +7,5 @@ if (input) {
 const reverse = function(original) {
   return original.split('').reverse().join('');
 };
+
+console.log(reverse("just do it"));
