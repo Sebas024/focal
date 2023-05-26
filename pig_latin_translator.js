@@ -1,10 +1,10 @@
-var temp;
-var str = "";
-const pigLatin = function (str){
-    var result = "";
+let temp;
+let str = "";
+const pigLatin = function (str) {
+    let result = "";
     
-    for (var i =1;  str.length > i; i++ ){
-        result += str[i]; 
+    for (let i = 1;  str.length > i; i++) {
+        result += str[i];
     }
     result = result + str[0] + "ay";
     return result;
